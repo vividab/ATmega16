@@ -92,11 +92,12 @@ int main(void)
 				redb();
 			}
 			}
-		for (int c=9;c>=0;c--)
-		{PORTB = c;
+	   for (int c=9;c>=0;c--)
+		{
+			PORTB = c;
 			greenc();
-		_delay_ms(1000);
-		if (c == 0)
+			_delay_ms(1000);
+			if (c == 0)
 			{
 				redc();
 			}
